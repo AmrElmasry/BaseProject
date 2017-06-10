@@ -8,8 +8,8 @@ import android.content.Intent;
  */
 
 public class JokesManager {
-    public static void showJoke(Context context) {
-        Intent intent = new Intent(context, JokesActivity.class);
+    public static void showJoke(Context context, JokesActivity activity) {
+        Intent intent = new Intent(context, activity.getClass());
         context.startActivity(intent);
     }
 }
